@@ -111,6 +111,8 @@ npm -v
 #Install Gemini CLI
 npm install -g @google/gemini-cli@latest
 ```
+<script src="https://asciinema.org/a/bnOJ2Hvdp7tC0yr7ifQreFM2e.js" id="asciicast-bnOJ2Hvdp7tC0yr7ifQreFM2e" async="true"></script>
+
 Next I go to [Google AI Studio][ai-studio] and get a Gemini API Key. Google AI Studio has a free-tier option with restricted usage limits. However it should be enough for now.
 
 I then configure the CLI to use it by creating a .gemini/.env file with the `GEMINI_API_KEY` variable. I also load the MCP server into the CLI by executing `gemini mcp add` command. When the CLI is started, it will spawn the MCP server automatically and connect with it over stdio. Note also I have added the `VAULT_ADDR` and `VAULT_TOKEN` variables in the .env file. The MCP server will use it to authenticate and make API calls to the Vault server.
